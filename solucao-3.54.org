@@ -14,7 +14,8 @@ O exercício exige o uso de um =stream-map= generalizado para /N/ streams. Utili
               (cons proc (map stream-rest argstreams))))))
 #+END_SRC
 
-~Exercise 3.54: Define a procedure mul-streams, analogous
+#+BEGIN_QUOTE
+Exercise 3.54: Define a procedure mul-streams, analogous
 to add-streams, that produces the elementwise product of
 its two input streams. Use this together with the stream of
 integers to complete the following definition of the stream
@@ -22,7 +23,7 @@ whose nth element (counting from 0) is n + 1 factorial:
 
 (define factorials
   (stream-cons 1 (mul-streams <???> <???>)))
-~
+#+END_QUOTE 
 
 Em primeiro lugar, é preciso definir =mul-streams=. Análogo a =add-streams=,
 ele tem como /input/ duas streams e aplica o procedimento primitivo =*=.
