@@ -85,7 +85,7 @@ Não consegui ser muito criativo nos testes, então acho que é algo a se aprimo
 
 *** Teste do Factorials          
 
-
+#+BEGIN_SRC scheme
 (define (teste-factorials)
   (begin
     (displayln(stream-first factorial))
@@ -94,5 +94,6 @@ Não consegui ser muito criativo nos testes, então acho que é algo a se aprimo
     (displayln(stream-first(stream-rest(stream-rest (stream-rest factorials)))))))
 
 (teste-factorials)
+#+END_SRC 
 
  
