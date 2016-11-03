@@ -1,6 +1,6 @@
-Title: Solução do exercício 3.54 do SICP
+* Solução do exercício 3.54 do SICP
 
-* Solução
+** Solução
 
 O exercício exige o uso de um =stream-map= generalizado para /N/ streams. Utilizei o código do Alifer da /solucao-3.50.rkt/, apenas substituindo o =cons-stream=, =car-stream= e =cdr-stream= pelos seus equivalentes na documentação do Racket: 
 
@@ -60,11 +60,11 @@ Finalmente, temos a stream /factorials/:
 
 
    
-* Teste
+** Teste
 
 Não consegui ser muito criativo nos testes, então acho que é algo a se aprimorar.
 
-** Teste do Mul-streams
+*** Teste do Mul-streams
 
 #+BEGIN_SRC scheme
 (define a integers)
@@ -83,7 +83,7 @@ Não consegui ser muito criativo nos testes, então acho que é algo a se aprimo
 
 #+END_SRC
 
-** Teste do Factorials          
+*** Teste do Factorials          
 
 
 (define (teste-factorials)
@@ -95,3 +95,4 @@ Não consegui ser muito criativo nos testes, então acho que é algo a se aprimo
 
 (teste-factorials)
 
+ 
